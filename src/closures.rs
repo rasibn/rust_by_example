@@ -1,4 +1,9 @@
-mod Capturing;
+mod input_functions;
+mod input_parameters;
+mod iterator_any;
+mod output_parameters;
+mod searching_iterators;
+mod type_anonymity;
 
 pub(crate) fn main() {
     let outer_var = 42;
@@ -11,4 +16,12 @@ pub(crate) fn main() {
 
     let one = || 1;
     println!("closure returning a one: {}", one());
+
+    input_parameters::main();
+    type_anonymity::main();
+    input_functions::main();
+    iterator_any::main();
+    output_parameters::main();
+    searching_iterators::main();
+    searching_iterators::main2();
 }
