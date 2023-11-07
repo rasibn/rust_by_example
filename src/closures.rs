@@ -1,4 +1,4 @@
-mod Capturing;
+mod capture;
 
 pub(crate) fn main() {
     let outer_var = 42;
