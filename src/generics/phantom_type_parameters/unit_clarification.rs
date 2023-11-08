@@ -42,7 +42,7 @@ impl<Unit> Add for Length<Unit> {
     }
 }
 
-fn main() {
+pub(crate) fn main() {
     let one_foot: Length<Inch> = Length(12.0, PhantomData);
     let one_meter: Length<Mm> = Length(1000.0, PhantomData);
 
