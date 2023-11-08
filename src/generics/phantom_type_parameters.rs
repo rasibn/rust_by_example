@@ -1,4 +1,5 @@
 use std::marker::PhantomData;
+mod unit_clarification;
 
 // A phantom tuple struct which is generic over `A` with hidden parameter `B`.
 #[derive(PartialEq)] // Allow equality test for this type.
@@ -29,6 +30,8 @@ pub(crate) fn main() {
         first: 'Q',
         phantom: PhantomData,
     };
+
+    let main = unit_clarification::main();
 
     // println!("_tuple1 == tuple2: {}", _tuple1 == _tuple2);
     // println!("_struct1 == struct2: {}", _struct1 == _struct2);
