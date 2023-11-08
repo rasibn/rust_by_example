@@ -29,5 +29,5 @@ pub(crate) fn main2() {
     assert_eq!(index_of_first_even_number, Some(5));
 
     let index_of_first_negative_number = vec.into_iter().position(|x| x < 0);
-    assert_eq!(index_of_first_negative_number, None);
+    assert_eq!(index_of_first_negative_number, None)
 }

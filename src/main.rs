@@ -3,6 +3,7 @@ mod attributes;
 mod closures;
 mod diverging_functions;
 mod enums;
+mod generics;
 mod higher_order_function;
 mod let_else;
 mod modules;
@@ -26,4 +27,5 @@ fn main() {
     diverging_functions::main();
     modules::main();
     attributes::main();
+    generics::main();
 }
