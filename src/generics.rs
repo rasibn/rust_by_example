@@ -3,6 +3,7 @@ mod bounds;
 mod functions;
 mod implementation;
 mod new_type_idiom;
+mod phantom_type_parameters;
 mod traits;
 // A contrete type `A`
 struct A;
@@ -32,4 +33,5 @@ pub(crate) fn main() {
     bounds::main();
     new_type_idiom::main();
     associated_items::main();
+    phantom_type_parameters::main();
 }
