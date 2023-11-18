@@ -46,6 +46,7 @@ pub(crate) fn main() {
         length: 3.0,
         height: 4.0,
     };
+
     let _triangle = Triangle {
         length: 3.0,
         height: 4.0,
