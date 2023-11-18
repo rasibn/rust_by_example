@@ -1,5 +1,6 @@
-mod aliasiing;
+mod aliasing;
 mod mutability;
+mod ref_pattern;
 // Most of the time we'd like to access data without taking ownership over it.
 // To accomplish this, Rust uses a borrowiing mechanism. Instead of passing object
 // by value ( T ) , object can passed by ( &T ).
@@ -21,6 +22,9 @@ pub(crate) fn main() {
         borrow_i32(_ref_to_i32);
     }
     eat_box_i32(boxed_i32);
+
+    aliasing::main();
+    ref_pattern::main();
 }
 
 // This function takes ownership of a box and destroys it
